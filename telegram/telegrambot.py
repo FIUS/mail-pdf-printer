@@ -40,7 +40,7 @@ def doCheckedPostRequest(url):
 
 def printFile(userID,file,lprCmd=None):
     global users
-    doCheckedPostRequest("http://fs-ceiling:5000/printer")
+    #doCheckedPostRequest("http://fs-ceiling:5000/printer")
     if lprCmd is None:
         if users[str(userID)]:
             #os.system('lpr -o sides=two-sided-long-edge '+file)
