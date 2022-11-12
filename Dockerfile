@@ -1,5 +1,7 @@
-FROM python:3.6-alpine
-
-ADD . /script
-
-CMD python /script/mailprinter.py
+FROM olbat/cupsd
+ADD . /telegram-bot
+RUN apt update
+RUN apt install -y python3-pip
+RUN pip3 install -r /telegram-bot/requirements.txt
+RUN mkdir /data
+CMD sh /telegram-bot/run.sh
