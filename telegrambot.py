@@ -57,7 +57,7 @@ def printFile(userID, file, lprCmd=None):
     else:
         lprCommand = 'lpr  -P fius-printer '+str(lprCmd)+' '+file
         subprocess.run(shlex.split(lprCommand))
-    #os.system('rm '+file)
+    os.system('rm '+file)
 
 
 def build_menu(buttons,
