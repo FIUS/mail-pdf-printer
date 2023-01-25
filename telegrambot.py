@@ -2,7 +2,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler
 from telegram.ext import CallbackQueryHandler
-from telegram.ext import Filters
+from telegram.ext import filters
 from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
 from telegram import utils
